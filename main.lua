@@ -4,6 +4,7 @@ function love.load()
   player.y = 200
   player.speed = 3
   player.sprite = love.graphics.newImage("assets/Player/Player.png")
+  player.sprite:setFilter("nearest", "nearest")
   player.quad = love.graphics.newQuad(0, 0, 32, 32, player.sprite:getDimensions())
   player.scale = 4
 end
